@@ -1,0 +1,255 @@
+@import url('https://fonts.googleapis.com/css2?family=Caprasimo&family=Poppins:ital,wght@0,400;0,900;1,800&family=Ysabeau+SC:wght@100;200&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+}
+
+body{
+    overflow: hidden;
+
+}
+
+/* 
+#f3f5f8 --> dimWhite
+#3d535f --> darkGray
+#7ED3E5 --> lightBlue
+*/
+
+.colorScheme{
+    /* dark */
+    /* color: #3d535f; */
+
+    /* light */
+    color: #f3f5f8;
+}
+
+.container{
+    width: 100%;
+    min-height: 100vh;
+
+    /* light BG */
+    /* background-color: #f3f5f8; */
+
+    /* dark BG */
+    background-color: #3d535f;
+}
+
+nav{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    height: 80px;
+    z-index: 111;
+    line-height: 80px;
+}
+
+.logo{
+    display: flex;
+    font-size: 40px;
+    font-weight: 800;
+    letter-spacing: 3px;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+
+b{
+    font-size: 70px;
+    color: #7ED3E5;
+}
+
+.navItems{
+    display: flex;
+}
+
+.navItems li{
+    list-style: none;
+    margin: 0 15px;
+}
+
+.navItems li a{
+    font-size: 25px;
+    /* dark */
+    /* color: #3d535f; */
+
+    /* light */
+    /* color: #f3f5f8; */
+    letter-spacing: 3px;
+    text-decoration: none;
+    text-transform: capitalize;
+}
+
+.navItems li:hover a,
+.links a:hover{
+    color: #7ED3E5;
+}
+
+.links a{
+    font-size: 30px;
+    /* dark */
+    /* color: #3d535f; */
+    /* light */
+    /* color: #f3f5f8; */
+    margin: 25px 10px;   
+}
+
+.wrapper{
+    display: flex;
+    width: 100%;
+    /* height: 100vh; */
+    height: calc(100vh - 80px);
+    justify-content: center;
+    align-items: center;
+    padding: 0 10%;
+    overflow: hidden;
+}
+
+.wrapper::before{
+    position: absolute;
+    content: '';
+    height: 400px;
+    width: 400px;
+    border-radius: 50%;
+    left: -12%;
+    top: 40%;
+    background: linear-gradient(120deg,#7ED3E5, #3d535f);
+}
+
+.cols{
+    width: 50%;
+}
+
+.cols0{
+    z-index: 5;
+}
+
+.topline{
+    display: block;
+    position: relative;
+    font-size: 35px;
+    letter-spacing: 5px;
+    /* dark */
+    /* color: #3d535f; */
+    /* light */
+    /* color: #f3f5f8; */
+}
+
+.topline::after{
+    position: absolute;
+    content: '';
+    height: 4px;
+    width: 45px;
+    bottom: 10px;
+    background-color: #7ED3E5;
+}
+
+h1{
+    display: block;
+    font-size: 70px;
+    font-weight: 800;
+    /* dark */
+    /* color: #3d535f; */
+    /* light */
+    /* color: #f3f5f8; */
+}
+
+.multiText{
+    color: #7ED3E5;
+    text-transform: capitalize;
+}
+
+p{
+    display: block;
+    width: 90%;
+    font-size: 1.2em;
+    /* dark */
+    /* color: #3d535f; */
+
+    /* light */
+    /* color: #f3f5f8; */
+}
+
+.btns{
+    width: 100%;
+    position: relative;
+    /* left:50px; */
+}
+
+button{
+    outline: none;
+    border: none;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: 400;
+    /* light */
+    /* color: #fff; */
+    /* dark BG */
+    /* background-color: #3d535f; */
+
+    /* dark */
+    color: #3d535f;
+    /* light BG*/
+    background-color: #f3f5f8;
+    padding: 8px 14px;
+    margin: 40px 5px;
+    letter-spacing: 2px;
+    text-transform: capitalize;
+    border-radius: 10px;
+    transition: transform .2s;
+    
+}
+
+button:hover{
+    background-color: #7ED3E5;
+    box-shadow: 0 15px 10px rgba(0,0,0,0.4);
+    transform: scale(1.05);
+}
+
+.imgBox{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.imgBox img{
+    position: relative;
+    height: 100%;
+    width: calc(130% - 80px );
+    top: 50px;
+    right: 50px;
+    margin-top: 100px;
+    /* animation: animateUser 4s linear infinite; */
+}
+
+@keyframes animateUser{
+    50%{
+        right: 30px;
+        /* top: -17px; */
+        
+    }
+}
+
+#splash{
+    position: absolute;
+    top: 20px;
+    left: -50px;
+    bottom: 50px; 
+    width: 140%;
+    transform: rotate(-35deg);
+
+    /* animation: animate 4s linear infinite; */
+}
+
+@keyframes animate{
+    50%{
+        right: 30px;
+        /* top: -17px; */
+        
+    }
+}
+
+   
+
